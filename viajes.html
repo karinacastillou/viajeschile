@@ -14,6 +14,7 @@
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./assets/css/styleviajes.css">
+  <script src="./assets/js/viajes.js"></script>
   <title>Viajes Chile</title>
 </head>
 
@@ -67,11 +68,9 @@
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
     </button>
     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
     </button>
   </div>
 
@@ -86,7 +85,7 @@
         <br>
 
         <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
-          <p class="bg-info text-center"><i class="fa-solid fa-plane fa-2x"></i></p>
+          <p class="bg-info text-center"><i class="fa-solid fa-plane fa-2x" title="Nuestros Viajes" data-bs-toggle="tooltip" data-bs-placement="bottom"></i></p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Dignissimos iure libero vitae amet nemo sed,
             consequatur, rem vel est a sequi quaerat molestias ad. Ipsum repellat dolorum odio repellendus perferendis.
             Lorem ipsum dolor sit amet consectetur adipisicing elit.Dignissimos iure libero vitae amet nemo sed,
@@ -106,12 +105,12 @@
             sed, consequatur, rem vel est a sequi quaerat molestias ad. Ipsum repellat dolorum odio repellendus
             perferendis.
           </p>
-          <p class="bg-info text-center"><i class="fa-solid fa-mountain fa-2x"></i></p>
+          <p class="bg-info text-center"><i class="fa-solid fa-mountain fa-2x" title="Nuestros Senderos" data-bs-toggle="tooltip" data-bs-placement="bottom"></i></p>
 
         </div>
 
         <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
-          <p class="bg-info text-center"><i class="fa-solid fa-route fa-2x"></i></p>
+          <p class="bg-info text-center"><i class="fa-solid fa-route fa-2x" title="¿Cómo llegar?" data-bs-toggle="tooltip" data-bs-placement="bottom"></i></p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Dignissimos iure libero vitae amet nemo sed,
             consequatur, rem vel est a sequi quaerat molestias ad. Ipsum repellat dolorum odio repellendus perferendis.
             Lorem ipsum dolor sit amet consectetur adipisicing elit.Dignissimos iure libero vitae amet nemo sed,
@@ -182,27 +181,27 @@
   </section>
 
   <section class="bg-dark py-5">
-    <form>
+    <form action="#" method="get">
       <div class="container text-white">
         <h5 class="text-center fw-bold">
           CONTACTO
         </h5>
         <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Nombre</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <label for="textNombre" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="textNombre">
         </div>
 
         <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Asunto</label>
-          <input type="password" class="form-control" id="exampleInputPassword1">
+          <label for="textAsunto" class="form-label">Asunto</label>
+          <input type="text" class="form-control" id="textAsunto">
         </div>
 
         <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Mensaje</label>
-          <textarea class="form-control" cols="30" rows="7"></textarea>
+          <label for="textMensaje" class="form-label">Mensaje</label>
+          <textarea class="form-control" cols="30" rows="7" id="textMensaje"></textarea>
         </div>
-
-        <button type="submit" class="btn btn-submit">Enviar</button>
+        <input type="submit" class="btn btn-submit" value="Enviar Formulario">
+  
       </div>
     </form>
   </section>
@@ -251,7 +250,7 @@
 
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="./assets/js/rinco.js"></script>
+ 
 
 </body>
 
