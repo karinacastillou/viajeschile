@@ -14,7 +14,7 @@
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./assets/css/styleviajes.css">
-  <script src="./assets/js/viajes.js"></script>
+  <script src="./assets/js/viajes.js"></script>  <!--        revisar esto         -->
   <title>Viajes Chile</title>
 </head>
 
@@ -24,22 +24,24 @@
 
   <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top ">
     <div class="container">
-      <a class="navbar-brand text-white" href="#">Viajes Chile</a>
+
+      <img width="40px" src="assets/img/viajes.svg" alt="logo viajes chile">
+      <a class="navbar-brand mx-2 text-white" href="#">Viajes Chile</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto ">
+        <ul class="navbar-nav ms-auto">
           <li class="nav-item active ">
-            <a class="nav-link  text-white" href="#">Inicio<span class="sr-only "></span></a>
+            <a class="nav-link  text-white" href="#inicio">Inicio<span class="sr-only "></span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#">Quienes somos</a>
+            <a class="nav-link text-white" href="#aboutUs">Quienes somos</a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link text-white" href="#">Destacados</a>
+            <a class="nav-link text-white" href="#destacados">Destacados</a>
           </li>
 
           <li class="nav-item">
@@ -75,7 +77,7 @@
   </div>
 
 
-      <!--QUIENES SOMOS BLOQUES DE TEXTO-->
+  <!--QUIENES SOMOS BLOQUES DE TEXTO-->
   <header class="bg-dark">
     <div class="container text-white">
 
@@ -86,7 +88,8 @@
         <br>
 
         <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
-          <p class="bg-info text-center"><i class="fa-solid fa-plane fa-2x" title="Nuestros Viajes" data-bs-toggle="tooltip" data-bs-placement="bottom"></i></p>
+          <p class="bg-info text-center"><i class="fa-solid fa-plane fa-2x" title="Nuestros Viajes"
+              data-bs-toggle="tooltip" data-bs-placement="bottom"></i></p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Dignissimos iure libero vitae amet nemo sed,
             consequatur, rem vel est a sequi quaerat molestias ad. Ipsum repellat dolorum odio repellendus perferendis.
             Lorem ipsum dolor sit amet consectetur adipisicing elit.Dignissimos iure libero vitae amet nemo sed,
@@ -106,12 +109,14 @@
             sed, consequatur, rem vel est a sequi quaerat molestias ad. Ipsum repellat dolorum odio repellendus
             perferendis.
           </p>
-          <p class="bg-info text-center"><i class="fa-solid fa-mountain fa-2x" title="Nuestros Senderos" data-bs-toggle="tooltip" data-bs-placement="bottom"></i></p>
+          <p class="bg-info text-center"><i class="fa-solid fa-mountain fa-2x" title="Nuestros Senderos"
+              data-bs-toggle="tooltip" data-bs-placement="bottom"></i></p>
 
         </div>
 
         <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
-          <p class="bg-info text-center"><i class="fa-solid fa-route fa-2x" title="¿Cómo llegar?" data-bs-toggle="tooltip" data-bs-placement="bottom"></i></p>
+          <p class="bg-info text-center"><i class="fa-solid fa-route fa-2x" title="¿Cómo llegar?"
+              data-bs-toggle="tooltip" data-bs-placement="bottom"></i></p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Dignissimos iure libero vitae amet nemo sed,
             consequatur, rem vel est a sequi quaerat molestias ad. Ipsum repellat dolorum odio repellendus perferendis.
             Lorem ipsum dolor sit amet consectetur adipisicing elit.Dignissimos iure libero vitae amet nemo sed,
@@ -128,7 +133,7 @@
   <section class="bg-dark">
     <div class="container text-white">
 
-<!--CARD-->
+      <!--CARD-->
 
       <div class="row">
         <h5 class="text-center fw-bold py-5">
@@ -182,7 +187,7 @@
   </section>
 
 
-<!--FORMULARIO-->
+  <!--FORMULARIO-->
   <section class="bg-dark py-5">
     <form action="#" method="get">
       <div class="container text-white">
@@ -204,33 +209,49 @@
           <textarea class="form-control" cols="30" rows="7" id="textMensaje"></textarea>
         </div>
         <input type="submit" class="btn btn-submit" value="Enviar Formulario">
-  
+
       </div>
     </form>
   </section>
 
-<!--FOOTER-->
-  <footer class="bg-info py-2">
-    <div class="container fluid">
+  <!--FOOTER-->
 
-      <div class="row">
-        <div class="col-12 col-md-1 ms-auto mt-2 me-2">
-          <p><i class="fa-brands fa-cc-mastercard fa-2x"></i></p>
-        </div>
-        <div class="col-12 col-md-1 mt-2 me-2">
-          <p><i class="fa-brands fa-cc-visa fa-2x"></i></p>
-        </div>
-        <div class="col-12 col-md-1 mt-2 me-2">
-          <p><i class="fa-brands fa-cc-amex fa-2x"></i></p>
-        </div>
-        <div class="col-12 col-md-1 mt-2 me-2">
-          <p><i class="fa-brands fa-cc-diners-club fa-2x"></i></p>
-        </div>
 
+  <footer class="container-fluid text-center bg-info py-4">
+    <div class="footer-wrap">
+      <div>
+        <p class="fs-2 fw-bold">VIAJES CHILE</p>
       </div>
-
+      <div>
+        <i class="fa-brands fa-instagram fa-2x mx-2" data-bs-toggle="tooltip" data-bs-placement="top"
+          title="instagram"></i>
+        <i class="fa-brands fa-instagram fa-2x mx-2" data-bs-toggle="tooltip" data-bs-placement="top"
+          title="instagram"></i>
+        <i class="fa-brands fa-instagram fa-2x mx-2" data-bs-toggle="tooltip" data-bs-placement="top"
+          title="instagram"></i>
+        <i class="fa-brands fa-instagram fa-2x mx-2" data-bs-toggle="tooltip" data-bs-placement="top"
+          title="instagram"></i>
+      </div>
     </div>
   </footer>
+
+
+  <!--
+
+          <i class="fa-brands fa-github fa-2x mx-2"></i>
+    
+          <i class="fa-brands fa-linkedin fa-2x mx-2"></i>
+      
+          <i class="fa-brands fa-square-twitter fa-2x mx-2"></i>
+
+          <i class="fa-brands fa-square-facebook fa-2x mx-2">
+   
+
+  -->
+
+
+
+
 
 
 
@@ -253,7 +274,7 @@
 
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
- 
+
 
 </body>
 
